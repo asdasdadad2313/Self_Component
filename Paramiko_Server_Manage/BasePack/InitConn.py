@@ -18,7 +18,7 @@ import paramiko
 import os
 
 
-class SSHConn(metaclass=BaseConn):
+class InitConn(metaclass=BaseConn):
     @classmethod
     def connect(cls, type, **kwargs):
         info = ''
@@ -105,4 +105,10 @@ class SSHConn(metaclass=BaseConn):
         cls.sfc.close()
 
 
-
+if __name__ == "__main__":
+    InitConn.connect(
+        type='sf',
+        hostname='43.254.1.204',
+        username='root',
+        path='/home/linhanqiu/Downloads/KeyPair-85b5.pem')
+    InitConn.sftp('put', '/home/lixiangxiang/a.txt', '/home/linhanqiu/a.txt')

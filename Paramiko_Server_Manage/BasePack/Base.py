@@ -15,6 +15,7 @@ __author__ = 'linhanqiu'
 import paramiko
 from functools import partial
 
+
 class BaseConn(type):
     def __new__(cls, name, bases, attrs):
         attrs['ssh'] = paramiko.SSHClient()

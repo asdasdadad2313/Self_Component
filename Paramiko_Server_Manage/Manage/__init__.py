@@ -13,6 +13,3 @@
 __author__ = 'linhanqiu'
 
 
-def resdec(byte,decode='utf-8'):
-    return byte.decode(decode)
-

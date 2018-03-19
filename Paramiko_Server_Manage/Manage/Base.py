@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     __init__
+   File Name：     Base
    Description :
    Author :       linhanqiu
    date：          3/19/18
@@ -11,8 +11,14 @@
 -------------------------------------------------
 """
 __author__ = 'linhanqiu'
+import asyncio
 
 
-def resdec(byte,decode='utf-8'):
-    return byte.decode(decode)
-
+class BaseManage(type):
+    def __new__(cls, name, bases, attrs):
+        try:
+            import uvloop
+        except ImportError as e:
+            pass
+        attrs['loop'] = asyncio.get_event_loop()
+        return type.__new__(cls, name, bases, attrs)
