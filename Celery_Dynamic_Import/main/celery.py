@@ -38,7 +38,7 @@ class CeleryRunner:
                      broker=self.broker,
                      backend=self.backend,
                      )
-        app.conf.CELERY_IMPORTS = ['main.task', 'main.task.all_tasks']
+        app.conf.CELERY_IMPORTS = ['main.task', 'main.task.all_tasks','main.task.chain_task']
         return app
 
 
@@ -67,12 +67,12 @@ Runner = CeleryRunner()()
 
 # 引入任务
 
-
-@Runner.task
-def execute(func, *args, **kwargs):
+from main.TaskType.BaseTask import BaseTask
+@Runner.task(base=BaseTask,bind=True)
+def execute(self,func, *args, **kwargs):
+    print(self.request.id)
     func = import_string(func)
     return func(*args, **kwargs)
-
 
 if __name__ == '__main__':
     Runner.start()
