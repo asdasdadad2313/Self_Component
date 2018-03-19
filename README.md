@@ -7,7 +7,7 @@
 
 1 . [Celery动态任务](#1Celery动态任务)
 
-2 . [Pamamiko连接服务器Demo(单机版)](#2Pamamiko连接服务器Demo(取数据库IP群))
+2 . [Pamamiko连接服务器Demo(取数据库IP群)](#2Pamamiko连接服务器Demo(取数据库IP群))
 
 -----
 
