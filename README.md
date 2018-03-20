@@ -9,8 +9,12 @@
 
 2 . [Pamamiko连接服务器Demo(取数据库IP群)](#2Pamamiko连接服务器Demo(取数据库IP群))
 
+3 . [NameKo微服务搭建demo](#3NameKo微服务搭建demo)
+
 -----
 
 # 1Celery动态任务导入Demo(结合importlib)
 
 # 2Pamamiko连接服务器Demo(取数据库IP群)
+
+# 3NameKo微服务搭建demo
