@@ -5,12 +5,12 @@
 
 ------
 
-1 . [Celery动态任务](#1Celery动态任务)
+1 . [Celery动态任务导入Demo(结合importlib)](#1Celery动态任务导入Demo(结合importlib))
 
-2 . [Pamamiko连接服务器Demo(单机版)](#2Pamamiko连接服务器Demo(单机版))
+2 . [Pamamiko连接服务器Demo(取数据库IP群)](#2Pamamiko连接服务器Demo(取数据库IP群))
 
 -----
 
-# 1Celery动态任务
+# 1Celery动态任务导入Demo(结合importlib)
 
-# 2Pamamiko连接服务器Demo(单机版)
+# 2Pamamiko连接服务器Demo(取数据库IP群)
