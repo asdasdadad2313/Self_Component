@@ -16,6 +16,11 @@
 
 5 . [Sanic结合GraphQL的API接口DEMO](Sanic结合GraphQL的API接口DEMO)
 
+6 . [APScheduler时间任务调度Demo](APScheduler时间任务调度Demo)
+
+7 . [基于wxpy开发的自定义微信机器人](基于wxpy开发的自定义微信机器人)
+
+
 -----
 
 # 1Celery动态任务导入Demo(结合importlib)
@@ -27,5 +32,10 @@
 # 4很好思路的基于Sanic的微服务架构Demo
 
 # 5Sanic结合GraphQL的API接口DEMO
+
+# 6APScheduler时间任务调度Demo
+
+# 7基于wxpy开发的自定义微信机器人
+
 
 ------
